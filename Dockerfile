@@ -1,4 +1,4 @@
-FROM cmp1234/docker-nginx:1.10.3-python2.7.13-alpine3.6
+FROM cmp1234/nginx-python:1.10.3-python2.7.13-alpine3.6
 
 MAINTAINER Wang Lilong "wanglilong007@gmail.com"
 
