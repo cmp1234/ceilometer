@@ -4,10 +4,6 @@ MAINTAINER Wang Lilong "wanglilong007@gmail.com"
 
 ENV VERSION=6.0.0
 
-		#openssl \
-		#openssl-dev \
-#&& apk add --no-cache libffi-dev python-dev libssl-dev mysql-client python-mysqldb \
-
 RUN set -x \  
     && apk add --no-cache --virtual .build-deps \
 		coreutils \
