@@ -7,6 +7,7 @@ ENV VERSION=6.0.0
 RUN set -x \  
     && apk add --no-cache --virtual .build-deps \
 		coreutils \
+		curl \
 		gcc \
 		linux-headers \
 		make \
