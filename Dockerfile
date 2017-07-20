@@ -28,7 +28,7 @@ RUN set -x \
     && cd ceilometer-${VERSION} \
     && pip install -r requirements.txt \
     && PBR_VERSION=${VERSION}  pip install . \
-    && pip install uwsgi MySQL-python \
+    && pip install MySQL-python \
     && cp -r etc /etc/keystone \
     && pip install python-openstackclient \
     && cd - \
