@@ -29,7 +29,7 @@ RUN set -x \
     && pip install -r requirements.txt \
     && PBR_VERSION=${VERSION}  pip install . \
     && pip install MySQL-python \
-    && cp -r etc /etc/keystone \
+    && cp -r etc /etc/ \
     && pip install python-openstackclient \
     && cd - \
     && rm -rf ceilometer-${VERSION}* \
