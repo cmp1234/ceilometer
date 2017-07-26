@@ -23,6 +23,7 @@ RUN set -x \
 		libxml2 \
 		libxslt-dev \
 		libxslt \
+    && apk add --no-cache --virtual .run-deps mysql-client \
     && curl -fSL https://github.com/openstack/ceilometer/archive/${VERSION}.tar.gz -o ceilometer-${VERSION}.tar.gz \
     && tar xvf ceilometer-${VERSION}.tar.gz \
     && cd ceilometer-${VERSION} \
