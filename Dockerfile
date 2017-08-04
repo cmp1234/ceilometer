@@ -31,7 +31,7 @@ RUN set -x \
     && PBR_VERSION=${VERSION}  pip install . \
     && pip install MySQL-python==1.2.5 \
     && cp -r etc /etc/ \
-    #&& pip install python-openstackclient \
+    && pip install python-openstackclient==3.12.0 \
     && cd - \
     && rm -rf ceilometer-${VERSION}* \
     && apk del .build-deps
