@@ -30,7 +30,7 @@ RUN set -x \
     && pip install -r requirements.txt \
     && PBR_VERSION=${VERSION}  pip install . \
     && pip install  PyMySQL==0.7.4 \
-    && cp -r etc /etc/ \
+    && cp -rf etc/* /etc/ \
     && pip install python-openstackclient==3.12.0 \
     && cd - \
     && rm -rf ceilometer-${VERSION}* \
