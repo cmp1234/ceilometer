@@ -23,13 +23,13 @@ RUN set -x \
 		libxml2 \
 		libxslt-dev \
 		libxslt \
-    && apk add --no-cache --virtual .run-deps mysql-client py-mysqldb \
+    #&& apk add --no-cache --virtual .run-deps py-mysqldb \
     && curl -fSL https://github.com/openstack/ceilometer/archive/${VERSION}.tar.gz -o ceilometer-${VERSION}.tar.gz \
     && tar xvf ceilometer-${VERSION}.tar.gz \
     && cd ceilometer-${VERSION} \
     && pip install -r requirements.txt \
     && PBR_VERSION=${VERSION}  pip install . \
-    && pip install MySQL-python==1.2.5 \
+    && pip install  PyMySQL==0.7.4 \
     && cp -r etc /etc/ \
     && pip install python-openstackclient==3.12.0 \
     && cd - \
