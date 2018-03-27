@@ -15,7 +15,7 @@ RUN set -x \
         libffi-dev \
         python-dev \
         mysql-client \
-	py-mysqldb \
+	#py-mysqldb \
 	mariadb-dev \
 		zlib \
 		zlib-dev \
