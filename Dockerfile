@@ -14,7 +14,7 @@ RUN set -x \
 		musl-dev \
         libffi-dev \
 	python2 \
-        python-dev \
+        python2-dev \
         mysql-client \
 	py-mysqldb \
 	mariadb-dev \
