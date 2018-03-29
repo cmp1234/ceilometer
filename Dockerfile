@@ -13,7 +13,8 @@ RUN set -x \
 		make \
 		musl-dev \
         libffi-dev \
-        #python-dev \
+	python2 \
+        python-dev \
         mysql-client \
 	py-mysqldb \
 	mariadb-dev \
