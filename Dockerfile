@@ -17,7 +17,7 @@ RUN set -x \
 	python2 \
         python2-dev \
         mysql-client \
-	#py-mysqldb \
+	py-mysqldb \
 	mariadb-dev \
 		zlib \
 		zlib-dev \
