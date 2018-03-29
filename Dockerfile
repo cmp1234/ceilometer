@@ -6,6 +6,7 @@ ENV VERSION=6.0.0
 
 RUN set -x \  
     && apk del python2 \
+    && apk add --no-cache python2 \
     && apk add --no-cache --virtual .build-deps \
 		coreutils \
 		curl \
@@ -14,7 +15,6 @@ RUN set -x \
 		make \
 		musl-dev \
         libffi-dev \
-	python2 \
         python2-dev \
         mysql-client \
 	py-mysqldb \
