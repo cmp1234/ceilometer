@@ -5,6 +5,7 @@ MAINTAINER Wang Lilong "wanglilong007@gmail.com"
 ENV VERSION=6.0.0
 
 RUN set -x \  
+    && apk del python2
     && apk add --no-cache --virtual .build-deps \
 		coreutils \
 		curl \
