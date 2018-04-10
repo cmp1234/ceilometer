@@ -31,7 +31,7 @@ RUN set -x \
     && cd ceilometer-${VERSION} \
     && pip install -r requirements.txt \
     && PBR_VERSION=${VERSION}  pip install . \
-    && pip uninstall crypto pycrypto \
+    #&& pip uninstall crypto pycrypto \
     && pip install  PyMySQL==0.7.4 pycrypto crypto \
     && cp -rf etc/* /etc/ \
     && chown 18345:18345 -R /etc/ceilometer \
