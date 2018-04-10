@@ -35,6 +35,7 @@ RUN set -x \
     && cp -rf etc/* /etc/ \
     && chown 18345:18345 -R /etc/ceilometer \
     && chmod 600 -R /etc/ceilometer \
+    && chmod 700 /etc/ceilometer /etc/ceilometer/rootwrap.d /etc/ceilometer/examples\
     && pip install python-openstackclient==3.12.0 \
     && cd - \
     && rm -rf ceilometer-${VERSION}* \
